@@ -30,12 +30,22 @@ RSpec.describe UsersController, :type => :controller do
     end
   end
 
-  # describe 'POST #login' do
-  #   context 'with valid attributes' do
-  #     let(:user) {FactoryGirl.build :user}
-  #       expect {assigns(:user)}.to eq user
-  #   end
-  # end
+  describe 'POST #login' do
+    context 'with valid attributes' do
+      let(:user) {FactoryGirl.build :user}
+      it 'logs in a valid user' do
+        expect {assigns(:user)}.to eq user
+      end
+    end
+
+    context 'with invalid attributes' do
+      let(:user) {FactoryGirl.build :invalid_user}
+      it 'does not log in an invalid user' do
+        expect {assigns(:invalid_user)}.to not_eq user
+      end
+    end
+
+  end
 
 
 
