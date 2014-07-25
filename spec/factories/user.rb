@@ -10,6 +10,9 @@ FactoryGirl.define do
     last_sign_in_at {Time.now}
     current_sign_in_ip {"1010101"}
     last_sign_in_ip {"98989898"}
+  end
 
+  factory :invalid_user do
+    email {nil}
   end
 end
