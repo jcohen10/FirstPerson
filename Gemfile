@@ -46,6 +46,8 @@ gem 'dotenv'
 gem 'foursquare2'
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem 'haversine'
+gem 'chronic'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
