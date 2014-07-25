@@ -9,3 +9,4 @@ RSpec.describe User, :type => :model do
   it {should have_many(:user_checkpoints)}
   it {should have_many(:checkpoints).through(:user_checkpoints)}
 end
+
