@@ -31,6 +31,7 @@ player = User.new
 player.firstname = "Greg"
 player.email = "greg@dbc.com"
 player.gender = "male"
+player.total_xp = 0
 player.foursquare_id = 2
 player.save!
 
@@ -59,21 +60,26 @@ greg_gets_a_beer.quest_id = quest.id
 greg_gets_a_beer.user_id = player.id
 greg_gets_a_beer.complete!
 
-greg_gets_a_reward = UserReward.new
-greg_gets_a_reward.reward_id = beer.id
-greg_gets_a_reward.user_id = player.id
-greg_gets_a_reward.save!
-greg_gets_a_beer.save!
 
-gregs_checkin = CheckIn.new
-gregs_checkin.location_id = checkin_loc.id
-gregs_checkin.user_id = player.id
-gregs_checkin.save!
 
-gregs_checkpoint = UserCheckpoint.new
-gregs_checkpoint.user_id = player.id
-gregs_checkpoint.checkpoint_id = checkpoint.id
-gregs_checkpoint.complete!
-gregs_checkpoint.save!
+
+
+
+# greg_gets_a_reward = UserReward.new
+# greg_gets_a_reward.reward_id = beer.id
+# greg_gets_a_reward.user_id = player.id
+# greg_gets_a_reward.save!
+# greg_gets_a_beer.save!
+
+# gregs_checkin = CheckIn.new
+# gregs_checkin.location_id = checkin_loc.id
+# gregs_checkin.user_id = player.id
+# gregs_checkin.save!
+
+# gregs_checkpoint = UserCheckpoint.new
+# gregs_checkpoint.user_id = player.id
+# gregs_checkpoint.checkpoint_id = checkpoint.id
+# gregs_checkpoint.complete!
+# gregs_checkpoint.save!
 
 
