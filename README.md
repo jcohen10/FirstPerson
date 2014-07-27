@@ -1,6 +1,6 @@
 ## FirstPerson.io
 
-###(http://firstperson.herokuapp.com/)
+###http://firstperson.herokuapp.com/
 
 Our vision is to immerse the user into a virtual game inspired by real life, where experience points (XP) is obtained for what you do in the real world. 
 
