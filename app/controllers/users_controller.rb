@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   include UsersHelper
   include BuildHashHelper
 
-  #User Info
 
   def profile
     @users = User.all
@@ -15,8 +14,7 @@ class UsersController < ApplicationController
     render partial: "users/xp"
   end
 
-  # def class_user
-  # end
+  
 
   def notifications
     if logged_in?
@@ -28,8 +26,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # def stats
-  # end
+ 
 
   def boards
     @users = User.all
